@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(230, 255, 255);
+  font-family: sans-serif;
+  color: rgb(40, 40, 40);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 40rem;
+  background-color: rgb(249, 249, 249);
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, .2);
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 0;
+  padding: .5rem;
+  background-color: rgb(249, 249, 249);
+  border-radius: 4px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(230, 255, 255);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control-inline {
+  display: flex;
+  margin-bottom: .3rem;
+}
+
+.form-control-inline label {
+    margin: 0;
+}
+
+.form-control-inline input {
+  width: auto;
+}
+
+form button {
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  border: 1px solid rgb(41, 41, 154);
+  font: inherit;
+  cursor: pointer;
+}
+
+#form-btns {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+#clear-btn {
+  color: rgb(41, 41, 154);
+}
+
+#clear-btn:hover {
+  background-color: rgb(232, 232, 255);
+}
+
+#submit-btn {
+  color: white;
+  background-color: rgb(41, 41, 154);
+}
+
+#submit-btn:hover {
+  background-color: rgb(30, 30, 110);
+}

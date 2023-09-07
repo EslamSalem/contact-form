@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="">
+        <section>
+          <h2>How can we help you?</h2>
+
+          <label for="user-name">Your Name</label>
+          <input type="text" name="user-name" id="user-name" required />
+
+          <label for="user-email">Your E-mail</label>
+          <input type="email" name="user-email" id="user-email" required />
+
+          <label for="user-phone-number">Your Phone Number</label>
+          <input
+            type="number"
+            name="user-phone-number"
+            id="user-phone-number"
+            required
+          />
+
+          <label for="user-message">Your Message</label>
+          <textarea name="user-message" id="user-message" rows="10"></textarea>
+
+          <label for="find-method">How did you find us?</label>
+          <select name="find-method" id="find-method">
+            <option value="web">Web Search</option>
+            <option value="word">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+
+          <div class="form-control-inline">
+            <input
+              type="radio"
+              name="reply-method"
+              id="reply-call"
+              value="call"
+              required
+            />
+            <label for="reply-call">Call me</label>
+          </div>
+          <div class="form-control-inline">
+            <input
+              type="radio"
+              name="reply-method"
+              id="reply-email"
+              value="email"
+              required
+            />
+            <label for="reply-email">Send me an E-mail</label>
+          </div>
+          <div class="form-control-inline">
+            <input
+              type="radio"
+              name="reply-method"
+              id="reply-dont"
+              value="dont"
+              required
+            />
+            <label for="reply-dont">Don't reply</label>
+          </div>
+        </section>
+        <section class="form-control-inline">
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms">Accept Terms</label>
+        </section>
+        <section>
+          <div id="form-btns">
+            <button id="clear-btn">Clear</button>
+            <button id="submit-btn">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
